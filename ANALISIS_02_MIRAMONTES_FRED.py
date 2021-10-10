@@ -90,7 +90,7 @@ def transports_imports_exports(direction):
     import_export_transports.sort(reverse = True, key = lambda x:x[1])
     #se crea un dataframe con pandas limitando la consulta a 
     #3 valores (los cuales se piden en el documento del reporte) renombrando las columnas
-    df_transport =pd.DataFrame(import_export_transports[:3], columns = ["Transports","Total"])
+    df_transport =pd.DataFrame(import_export_transports, columns = ["Transports","Total"])
     #se retorna el dataframe
     return df_transport
 
