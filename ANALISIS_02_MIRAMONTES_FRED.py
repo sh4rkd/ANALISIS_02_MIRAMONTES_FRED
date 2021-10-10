@@ -11,7 +11,7 @@ import pandas as pd
 #se crea una lista vacia para almacenar los datos del csv
 data_list = []
 #se abre el csv para su lectura con un alias
-with open("synergy_logistics_database.csv", "r") as synergy:
+with open("csv\synergy_logistics_database.csv", "r") as synergy:
     synergy_reader = csv.reader(synergy)
     #se vacia el csv a la lista previamente creada
     for synergy_data in synergy_reader:
